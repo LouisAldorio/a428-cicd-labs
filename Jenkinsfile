@@ -1,12 +1,8 @@
 node {
-    stage('Build') {
-        steps {
-            sh 'npm install'
-        }
+    stage('Build') {      
+        sh 'npm install'     
     }
     stage('Test') {
-        steps {
-            sh './jenkins/scripts/test.sh' 
-        }
+        sh './jenkins/scripts/test.sh' 
     }
 }
